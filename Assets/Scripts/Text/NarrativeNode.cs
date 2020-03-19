@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 [System.Serializable]
-public struct line
+public struct Line
 {
     [TextArea(2, 5)]
-    public string text;
+    public string NarrativeText;
 }
 
-[CreateAssetMenu(fileName =("Element"),menuName =("Scriptable/NarrativeNodes"))]
+[CreateAssetMenu(fileName = ("Element"), menuName = ("Scriptable/NarrativeNodes"))]
 
 public class NarrativeNode : ScriptableObject
 {
     public string character;
-    public line[] lines;
+    public Line[] lines;
 }
