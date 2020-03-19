@@ -5,38 +5,45 @@ using UnityEngine.UI;
 
 public class NarrativeDisplay : MonoBehaviour
 {
-    public Text textDisplay;
-    public GameObject activeNDObject;
+    public Text textDisplay;        // UI text
+    public GameObject activeND;     // Display object holding UI text and panel
 
-    private int activeIndex = 0;
+    private int activeIndex = 0;    // Keeps track of the sentence index.
 
-    // Start is called before the first frame update
+    [SerializeField]
+    ActivateObject _activateObject;
+
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && DetectObject.ObjectInRange == true)
+        if (DetectObject.ObjectInRange == true)
         {
-            activeNDObject.SetActive(true);
-            DisplayText();
-            // Debug.Log(activeIndex);
+            _activateObject = DetectObject.AO;
         }
-        else if (DetectObject.ObjectInRange == false)
+
+        if (Input.GetKeyDown(KeyCode.F) && DetectObject.ObjectInRange == true)  // Player must be within an object and press key
         {
-            activeNDObject.SetActive(false);
+            activeND.SetActive(true);                   // Show Display object
+            DisplayText();
+        }
+        else if (DetectObject.ObjectInRange == false)   // Hide Display Object and reset sentence index
+        {
+            activeND.SetActive(false);
             activeIndex = 0;
         }
     }
 
     void DisplayText()
     {
-        if(activeIndex < ActivateObject.sentence.NewSentence.Length)
+        if (activeIndex < _activateObject.sentence.NewSentence.Length)      // Display sentence[index] and increase index
         {
-            textDisplay.text = ActivateObject.sentence.NewSentence[activeIndex];
+            textDisplay.text = _activateObject.sentence.NewSentence[activeIndex];
             activeIndex += 1;
         }
-        else
+        else                                                                // Hide Display object and reset sentence index
         {
             activeIndex = 0;
-            activeNDObject.SetActive(false);
+            activeND.SetActive(false);
         }
     }
 }

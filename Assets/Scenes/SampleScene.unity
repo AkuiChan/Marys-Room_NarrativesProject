@@ -172,7 +172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1435668906}
-  activeNDObject: {fileID: 1355190078}
+  activeND: {fileID: 1355190078}
+  _activateObject: {fileID: 0}
 --- !u!1 &507237391
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +190,7 @@ GameObject:
   - component: {fileID: 507237396}
   - component: {fileID: 507237398}
   m_Layer: 8
-  m_Name: Table
+  m_Name: Object1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f738e22729637548b8918c2e9bb26eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectSentence: {fileID: 11400000, guid: 8697a4eafbf532b449f9cd7a32e21253, type: 2}
+  sentence: {fileID: 11400000, guid: 8697a4eafbf532b449f9cd7a32e21253, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +730,7 @@ GameObject:
   - component: {fileID: 1445862403}
   - component: {fileID: 1445862402}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -826,7 +827,7 @@ GameObject:
   - component: {fileID: 1482342691}
   - component: {fileID: 1482342690}
   m_Layer: 8
-  m_Name: Bed
+  m_Name: Object2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -858,7 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f738e22729637548b8918c2e9bb26eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectSentence: {fileID: 11400000, guid: 5fee5ecfc576560469d7addfe7502626, type: 2}
+  sentence: {fileID: 11400000, guid: 5fee5ecfc576560469d7addfe7502626, type: 2}
 --- !u!54 &1482342691
 Rigidbody:
   m_ObjectHideFlags: 0
