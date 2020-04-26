@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class MovementScript : MonoBehaviour
 {
-    Rigidbody rb;
     CharacterController cc;
 
     private Vector3 moveDirection = Vector3.zero;
     public float speed = 6.0f;
-    public float jumpSpeed = 8.0f;
+    public float jumpSpeed = 1.0f;
     public float gravity = 20.0f;
+    private bool isJump = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
         cc = GetComponent<CharacterController>();
     }
 
@@ -35,6 +34,15 @@ public class MovementScript : MonoBehaviour
             {
                 moveDirection.y = jumpSpeed;
             }
+
+            if (moveDirection != Vector3.zero)
+            {
+                transform.rotation = Quaternion.LookRotation(moveDirection);
+                
+            }
+
+            // Rotation for 2.5d 
+            // transform.right = Vector3.Slerp(transform.right, Vector3.right * Input.GetAxis("Horizontal"), 0.1f);
         }
 
         // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
