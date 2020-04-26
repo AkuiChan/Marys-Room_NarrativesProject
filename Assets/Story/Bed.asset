@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88d4c0f5e6997354dbc6e98c21950b03, type: 3}
-  m_Name: Element1
+  m_Script: {fileID: 11500000, guid: 227b1e851cf931f419efbd317eac251a, type: 3}
+  m_Name: Bed
   m_EditorClassIdentifier: 
-  character: 
-  lines:
-  - NarrativeText: The Text has succesfully been replaced
+  NewSentence:
+  - I wounder if ive seen color in dreams?
+  - But im not tired right now.
