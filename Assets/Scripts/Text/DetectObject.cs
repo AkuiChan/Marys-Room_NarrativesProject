@@ -5,19 +5,18 @@ public class DetectObject : MonoBehaviour
 {
     public static bool ObjectInRange = false;
     public static ActivateObject AO;
-
+    public GameObject InteractionPrompt;
 
     private void OnTriggerEnter(Collider other)
     {
         ObjectInRange = true;
-        AO  = other.gameObject.GetComponent<ActivateObject>();
-        // Debug.Log(ObjectInRange);
-        // Debug.Log(AO);      
+        AO  = other.gameObject.GetComponent<ActivateObject>(); 
+        InteractionPrompt.SetActive(true);
     }
 
     private void OnTriggerExit(Collider other)
     {
         ObjectInRange = false;
-        // Debug.Log(ObjectInRange);
+        InteractionPrompt.SetActive(false);
     }
 }
