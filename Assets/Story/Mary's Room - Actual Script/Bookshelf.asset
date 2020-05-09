@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227b1e851cf931f419efbd317eac251a, type: 3}
+  m_Name: Bookshelf
+  m_EditorClassIdentifier: 
+  NewSentence:
+  - Color research & application Vol 4.
+  - Physics of Color #1 to #5 .
+  - Communication efficiency of Color naming.
+  - A Systematic investigation of conceptual color association.
+  - "Spectral Colors and Color Reproduction. \r"
+  - Experiencing Color, a complete encyclopedia.
+  - I think I know these books from cover to cover.
