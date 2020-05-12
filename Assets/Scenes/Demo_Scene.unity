@@ -630,8 +630,8 @@ GameObject:
   - component: {fileID: 701935311}
   - component: {fileID: 701935310}
   - component: {fileID: 701935309}
-  - component: {fileID: 701935306}
   - component: {fileID: 701935308}
+  - component: {fileID: 701935306}
   - component: {fileID: 701935307}
   - component: {fileID: 701935312}
   m_Layer: 0
@@ -4061,6 +4061,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  Objects: 6
 --- !u!33 &1025276403980920222
 MeshFilter:
   m_ObjectHideFlags: 0

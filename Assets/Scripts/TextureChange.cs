@@ -10,6 +10,7 @@ public class TextureChange : MonoBehaviour
     public DetectObject DO;
     private bool CountDone = false;
     public UnityEvent ActiveEvent;
+    public int Objects;
 
     Renderer rend;
 
@@ -28,7 +29,7 @@ public class TextureChange : MonoBehaviour
             rend.material = ActiveScreen;
         }
         // If the player has interacted with x-amount of objects the scren turns on and shows color
-        else if (DO.ObjectFinalCount >= 3)
+        else if (DO.ObjectFinalCount >= Objects)
         {
             rend.material = ColorScreen;
             CountDone = true;
