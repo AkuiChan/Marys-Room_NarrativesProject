@@ -8,9 +8,12 @@ public class TextureChange : MonoBehaviour
     public Material InactiveScreen, ActiveScreen, ColorScreen;
     public ComputerDetection CD;
     public DetectObject DO;
-    private bool CountDone = false;
+    public bool CountDone = false;
     public UnityEvent ActiveEvent;
     public int Objects;
+    public GameObject EndDisplay;
+
+    public Sentence endSentence;
 
     Renderer rend;
 
@@ -33,6 +36,8 @@ public class TextureChange : MonoBehaviour
         {
             rend.material = ColorScreen;
             CountDone = true;
+            EndDisplay.SetActive(true);
+            
             ActiveEvent.Invoke();
         }
         // Turn screen off (unless x-amount of objects are interacted with)

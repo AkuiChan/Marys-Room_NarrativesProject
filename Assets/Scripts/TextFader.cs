@@ -8,7 +8,6 @@ public class TextFader : MonoBehaviour
     private bool mFaded = false;
 
     public float Duration = 0.4f;
-    public GameObject End;
 
 
     public void Fade()
@@ -37,6 +36,5 @@ public class TextFader : MonoBehaviour
     public void DissableButton(GameObject button)
     {
         button.SetActive(false);
-        End.SetActive(true);
     }
 }

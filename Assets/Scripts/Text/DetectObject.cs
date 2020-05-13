@@ -19,8 +19,8 @@ public class DetectObject : MonoBehaviour
             // Testing Object Increase Value
             AO.ObjectCount += 1;
             ObjectFinalCount += AO.ObjectCount;
-            Debug.Log(AO.ObjectCount);
-            Debug.Log(ObjectFinalCount);
+            // Debug.Log(AO.ObjectCount);
+            // Debug.Log(ObjectFinalCount);
         }
     }
 

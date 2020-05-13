@@ -10,11 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 227b1e851cf931f419efbd317eac251a, type: 3}
-  m_Name: Object 1 text
+  m_Name: endSentence
   m_EditorClassIdentifier: 
   NewSentence:
-  - Once upon a time there was a programmer
-  - She worked a really long time to make a system that worked
-  - 'And then it did.
-
-    The end.'
+  - ...

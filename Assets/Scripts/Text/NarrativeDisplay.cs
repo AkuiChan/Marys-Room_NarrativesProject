@@ -13,6 +13,8 @@ public class NarrativeDisplay : MonoBehaviour
     [SerializeField]
     ActivateObject _activateObject;
 
+    [SerializeField]
+    TextureChange _textureChange;
 
     void Update()
     {
@@ -24,7 +26,7 @@ public class NarrativeDisplay : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && DetectObject.ObjectInRange == true)  // Player must be within an object and press key
         {
             activeND.SetActive(true);                   // Show Display object
-            DisplayText();
+             DisplayText();
         }
         else if (DetectObject.ObjectInRange == false)   // Hide Display Object and reset sentence index
         {
@@ -44,6 +46,11 @@ public class NarrativeDisplay : MonoBehaviour
         {
             activeIndex = 0;
             activeND.SetActive(false);
+        }
+        
+        if (_textureChange.CountDone == true)
+        {
+            textDisplay.text = _textureChange.endSentence.NewSentence[0];
         }
     }
 }
