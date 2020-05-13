@@ -7,7 +7,7 @@ public class MovementScript : MonoBehaviour
     CharacterController cc;
     public Animator m_Animator;
     private Vector3 moveDirection = Vector3.zero;
-    public float speed = 6.0f;
+    public float speed = 2.0f;
     public float jumpSpeed = 1.0f;
     public float gravity = 20.0f;
     private bool isJump;
