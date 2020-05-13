@@ -5,12 +5,12 @@ using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
     CharacterController cc;
-
+    public Animator m_Animator;
     private Vector3 moveDirection = Vector3.zero;
     public float speed = 6.0f;
     public float jumpSpeed = 1.0f;
     public float gravity = 20.0f;
-    private bool isJump = false;
+    private bool isJump;
 
 
     // Start is called before the first frame update
@@ -52,5 +52,23 @@ public class MovementScript : MonoBehaviour
 
         // Move the controller
         cc.Move(moveDirection * Time.deltaTime);
+
+
+        //Check if movement keys are pressed, if yes set isMoving paramater of assigned Animator true.
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            m_Animator.SetBool("isMoving", true);
+        }
+        else
+            m_Animator.SetBool("isMoving", false);
+
+
+        //Check if space key is pressed, if yes set isJumping paramater of assigned Animator true.
+        if (Input.GetKey(KeyCode.Space))
+        {
+            m_Animator.SetBool("isJumping", true);
+        }
+        else
+            m_Animator.SetBool("isJumping", false);
     }
 }
