@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: Desk Half
   m_EditorClassIdentifier: 
   NewSentence:
-  - The human eye can view color via the cones cells in the retinas.
+  - "I\u2019m really proud of some of these illustrations, my drawing is definitely
+    getting better.  \r"
+  - "The human eye can view color via the cones cells in the retinas.  \r"
   - The cones work best in bright light, while the rod cells work better in dim light.
+  - "Im trying to persevere and replicate some of the old anatomy diagrams. \r"
+  - I wonder when this stopped being work and became my hobby?

@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Diploma
   m_EditorClassIdentifier: 
   NewSentence:
-  - It is one of my many Diplomas.
-  - "\u201CWe hereby certify that Mary Smith having duly satisfied the Examiners
+  - 'I ran out of space on my wall,
+
+    the rest of my diplomas are under the bed'
+  - 'This one says:'
+  - "\u201CWe hereby certify that Mary Jackson having duly satisfied the Examiners
     appointed by Senate"
   - and having fulfilled all the conditions prescribed by ordinance and regulation
-  - "by resolution of the council was awarded the Degree of Doctor of Color\u201D
-    \r"
+  - "by resolution of the council was awarded the honorary title of Professor of
+    Color\u201D"

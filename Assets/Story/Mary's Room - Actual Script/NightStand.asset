@@ -13,12 +13,18 @@ MonoBehaviour:
   m_Name: NightStand
   m_EditorClassIdentifier: 
   NewSentence:
-  - "Im currently reading \u201CPhysiology on Extraordinary Color Vision\u201D"
+  - "\u201CEye, brain, and vision\u201D "
+  - "\u201CColor-vision and Color-blindness: A practical Manual for Railroad Surgeons\u201D "
+  - "\u201CSpectral Colors and Color Reproduction.\u201D"
+  - "Im currently re-reading \u201CPhysiology on Extraordinary Color Vision\u201D"
+  - It is one of my favorite books.
   - As many animals perceive color differently to humans, we may never know what
     they experience.
-  - An example could be a bee, they have three spectral types of photoreceptors,
-    similar to humans.
-  - But while a human may see a flower as yellow, a bee will see patterns based on
-    Ultraviolet light.
-  - We can describe this, but cant experience it.
-  - 'So do we really understand it? '
+  - 'An example could be a bee, they have three spectral types of photoreceptors,
+    similar to humans. '
+  - 'But while a human may see a flower as yellow, a bee will see patterns based
+    on Ultraviolet light. '
+  - 'We can describe this, but cant experience it.
+
+    So do we really understand
+    it?'

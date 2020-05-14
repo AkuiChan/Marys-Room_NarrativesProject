@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Bookshelf
   m_EditorClassIdentifier: 
   NewSentence:
-  - Color research & application Vol 4.
-  - Physics of Color #1 to #5 .
-  - Communication efficiency of Color naming.
-  - A Systematic investigation of conceptual color association.
-  - "Spectral Colors and Color Reproduction. \r"
-  - Experiencing Color, a complete encyclopedia.
-  - I think I know these books from cover to cover.
+  - "\u201CCommunication efficiency of Color naming.\u201D "
+  - "\u201CA Systematic investigation of conceptual color association.\u201D "
+  - "\u201CColor Vision: From Genes to Perception\u201D "
+  - "\u201CHandbook of Color Psychology\u201D "
+  - "\u201CFahrenheit 451\u201D "
+  - "\u201CColour: A workshop for Artists and Designers\u201D "
+  - "\u201CPhysical Aspects of Colour\u201D "
+  - "\u201CPhysics-Based Vision: Principles and Practice: Color, Volume 2\u201D "
+  - 'I think I know these books from cover to cover. '
