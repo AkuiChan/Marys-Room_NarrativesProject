@@ -26,7 +26,7 @@ public class NarrativeDisplay : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && DetectObject.ObjectInRange == true)  // Player must be within an object and press key
         {
             activeND.SetActive(true);                   // Show Display object
-             DisplayText();
+            DisplayText();
         }
         else if (DetectObject.ObjectInRange == false)   // Hide Display Object and reset sentence index
         {

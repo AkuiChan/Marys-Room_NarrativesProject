@@ -3,7 +3,37 @@ guid: db9734ad9bbf26d48a3bbb9e34e5f943
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: f0894440d11103b488342d45a964aea7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 4fcc2f20400bf014082cc06339231e7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_base_black
+    second: {fileID: 2100000, guid: 2e253a0acaf94524ba121bab0b3d362e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_base_grey1
+    second: {fileID: 2100000, guid: ba91406af9de474418ea3cffe6c20cd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_base_white2
+    second: {fileID: 2100000, guid: 8c0bf0d7ea3242241b47256b446ecd60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phongE5_glass
+    second: {fileID: 2100000, guid: 1e15a6df48c750e4fa87f421aee1e946, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
